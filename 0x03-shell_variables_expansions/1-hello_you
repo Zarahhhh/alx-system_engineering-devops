@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "hello $current_user"
+full_name=$(getent passwd $current_user | cut -d ':' -f 5 | cut -d ',' -f 1)
+echo "hello $full_name"
