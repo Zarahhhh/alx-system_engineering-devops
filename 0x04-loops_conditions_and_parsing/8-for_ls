@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script lists files in the current directory, showing only part after the first dash
+mylist=$(ls)
+for i in $mylist; do
+  echo "$i" | cut -d '-' -f2
+done
