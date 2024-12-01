@@ -1,0 +1,16 @@
+Simple Web Stack Design
+
+Diagram:
+(https://imgur.com/a/PEzjsBd)
+
+Explanation:
+- **Server:** A computer hosting all components.
+- **Domain Name:** `foobar.com` points to the server via an A record.
+- **Web Server (Nginx):** Serves static content and routes requests to the application server.
+- **Application Server:** Runs the application logic.
+- **Database (MySQL):** Stores and manages data.
+
+Issues:
+- Single Point of Failure (SPOF): If the server goes down, the site is unavailable.
+- Maintenance Downtime: Updates require the server to restart.
+- Scalability: Cannot handle heavy traffic.

@@ -1,0 +1,14 @@
+Secured and Monitored Web Infrastructure
+
+Diagram:
+(https://imgur.com/a/PEzjsBd)
+
+Explanation:
+- **Firewalls:** Protect against unauthorized access.
+- **HTTPS:** Encrypts data between client and server.
+- **Monitoring:** Tracks server performance and detects issues.
+
+Issues:
+- SSL termination at the load balancer level can be insecure.
+- Single writable MySQL node can limit performance.
+- Overloaded servers due to lack of resource specialization.

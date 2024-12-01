@@ -1,0 +1,14 @@
+Distributed Web Infrastructure
+
+Diagram:
+(https://imgur.com/a/PEzjsBd)
+
+Explanation:
+- **Servers:** Two servers for redundancy.
+- **Load Balancer (HAProxy):** Distributes traffic using a round-robin algorithm.
+- **Database:** Primary node handles writes; replica handles reads.
+
+Issues:
+- SPOF: Load balancer can fail.
+- Security: No HTTPS or firewalls.
+- Monitoring: No performance tracking.

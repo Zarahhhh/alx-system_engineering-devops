@@ -1,0 +1,12 @@
+Scale Up
+
+Diagram:
+(https://imgur.com/a/PEzjsBd)
+
+Explanation:
+- **New Server:** Separates web, application, and database servers.
+- **Load Balancer Cluster:** Ensures no single point of failure for load balancing.
+
+Benefits:
+- Increased scalability.
+- Improved redundancy and fault tolerance.
