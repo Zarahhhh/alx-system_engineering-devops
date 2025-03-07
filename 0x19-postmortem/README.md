@@ -1,50 +1,67 @@
-0x19. Postmortem
+🚨 The Case of the Disappearing Homepage
 
 Issue Summary
 
-On March 5, 2025, from 10:00 AM to 10:15 AM WAT, our website displayed a 404 Not Found error, preventing users from accessing the homepage. Approximately 80% of visitors were affected during this period.
-The root cause was an accidental deletion of the index.html file from the web server.
+📅 Date: March 5, 2025
 
-Timeline
-•	10:00 AM UTC - A user reported that the homepage was missing.
+⏰ Duration: 10:00 AM - 10:15 AM WAT
 
-•	10:02 AM UTC - Engineers verified the issue through server logs and user reports.
+📉 Impact: 80% of users saw a "404 Not Found" error 😭
 
-•	10:05 AM UTC - Checked the web server directory and found that index.html was missing.
+🎯 Root Cause: Someone accidentally deleted index.html (oops!).
 
-•	10:07 AM UTC - Assumed a server update might have removed the file; investigated recent changes.
+At exactly 10:00 AM WAT, our website decided to vanish into the digital abyss, leaving users staring at a 404 Not Found page. It was like our homepage went on an unannounced vacation—without an out-of-office message.
 
-•	10:10 AM UTC - Realized the file had been manually deleted by mistake.
+After some panic debugging (and checking if we forgot to pay for the domain—nope, still ours!), we realized the culprit:
 
-•	10:11 AM UTC - Escalated to the DevOps team to restore the missing file.
+🚨 The index.html file was missing. Gone. Poof. Vanished.
 
-•	10:12 AM UTC - Restored the index.html file from a backup.
+🔍 Timeline: How It Unfolded
 
-•	10:14 AM UTC - Confirmed file permissions and tested homepage accessibility.
+•	10:00 AM WAT – A user reported: "Hey, where did the homepage go?" 🤔
 
-•	10:15 AM UTC - Website fully restored.
+•	10:05 AM WAT – Engineers checked the server logs… nothing suspicious.
 
-Root Cause and Resolution
+•	10:10 AM WAT – Discovery: index.html was missing! 🔍
 
-The issue was caused by an accidental deletion of the index.html file, which is essential for displaying the homepage.
+•	10:12 AM WAT – File restored from backup (phew!).
 
-To fix the issue:
+•	10:15 AM WAT – Website back online! 🎉
 
-1.	Engineers restored the missing index.html file from the latest backup.
+💥 Root Cause & Fix
 
-2.	Permissions were checked to ensure the file was accessible.
+What Happened?
 
-3.	A verification test confirmed that the homepage was working again.
+Someone (name withheld for their safety 😅) accidentally deleted index.html, the key file that loads our homepage.
 
-Corrective and Preventative Measures
+How We Fixed It?
 
-To prevent similar issues in the future, we will:
+✔ Step 1: Restored index.html from the most recent backup.
 
-•	Enable File Protection - Implement a safeguard to prevent accidental deletion of critical files.
+✔ Step 2: Checked file permissions to prevent unauthorized deletion.
 
-•	Improve Backup Processes - Ensure automatic backups are taken daily.
+✔ Step 3: Verified the homepage was working again.
 
-•	Enhance Monitoring - Set up an alert system to notify engineers if essential files are missing.
+🛡️ Prevention: Never Again!
 
-•	Train Engineers - Provide guidelines on handling critical web files safely.
+To ensure our homepage doesn’t "ghost" us again, we’ve implemented:
 
+✅ Lock Critical Files – No more accidental deletions!
+
+✅ Daily Backups – Because disasters love surprises.
+
+✅ Automated Alerts – Immediate notifications when key files are missing.
+
+✅ Employee Training – "How Not to Accidentally Delete The Internet 101."
+
+📷 Fun Visual Representation
+
+Here’s what happened in technical terms:
+
+ 
+![Error Flow](./error-diagram.png)
+
+
+📌 Key Takeaway:
+
+Even the smallest mistake (like deleting one file) can cause chaos. But with proper backups and protections, we can keep the website safe from disappearing acts. 🚀
