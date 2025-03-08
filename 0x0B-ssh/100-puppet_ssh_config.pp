@@ -1,3 +1,5 @@
+# This Puppet script configures the /etc/ssh/ssh_config file as required.
+
 file { '/etc/ssh/ssh_config':
   ensure  => present,
   content => "
