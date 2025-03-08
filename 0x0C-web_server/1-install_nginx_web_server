@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script installs Nginx, starts it, and sets up "Hello World!" on the default page
+
+# Update package list
+sudo apt-get update -y
+
+# Install Nginx
+sudo apt-get install nginx -y
+
+# Start Nginx without systemctl
+sudo service nginx start
+
+# Set "Hello World!" as the homepage
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Restart Nginx without systemctl
+sudo service nginx restart
