@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -i ~/.ssh/school ubuntu@18.204.215.41
